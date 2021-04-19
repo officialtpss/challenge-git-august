@@ -28,6 +28,8 @@ tape('should respond user-agent', (t) => {
     if (err) t.error(err)
 
     t.equal(body.ua, 'tape')
+
+    t.equal(body.b64, 'aGVsbG8=')
     t.end()
   })
 })
